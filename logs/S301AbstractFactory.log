@@ -35,3 +35,6 @@
 2024-05-06 11:51:44.632 INFO  n2exercici1.handlers.MainMenuHandler  - MainMenuHandler :: runMainMenu :: show MainMenu.
 2024-05-06 11:52:50.973 INFO  n2exercici1.handlers.CreateContactHandler  - CreateContactHandler :: runCreateContact :: new contact created.
 2024-05-06 11:52:50.974 INFO  n2exercici1.handlers.CreateContactHandler  - CreateContactHandler :: runCreateContact :: new contact added to contact list.
+2024-05-14 20:18:53.700 INFO  n2exercici1.handlers.MainMenuHandler  - MainMenuHandler :: runMainMenu :: show MainMenu.
+2024-05-14 20:20:13.318 INFO  n2exercici1.handlers.CreateContactHandler  - CreateContactHandler :: runCreateContact :: new contact created.
+2024-05-14 20:20:13.319 INFO  n2exercici1.handlers.CreateContactHandler  - CreateContactHandler :: runCreateContact :: new contact added to contact list.

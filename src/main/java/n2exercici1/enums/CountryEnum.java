@@ -2,17 +2,15 @@ package n2exercici1.enums;
 
 public enum CountryEnum {
 
-	SPAIN("Spain", "+34", "SP"),
-	UK("United Kingdom", "+44", "UK");
+	SPAIN("Spain", "+34"),
+	UK("United Kingdom", "+44");
 	
 	private String name;
 	private String telephonePrefix;
-	private String countryCode;
 	
-	private CountryEnum(String name, String telephonePrefix, String countryCode) {
+	private CountryEnum(String name, String telephonePrefix) {
 		this.name = name;
 		this.telephonePrefix = telephonePrefix;
-		this.countryCode = countryCode;
 	}
 	
 	public String getName() {
@@ -21,9 +19,5 @@ public enum CountryEnum {
 
 	public String getTelephonePrefix() {
 		return telephonePrefix;
-	}
-
-	public String getCountryCode() {
-		return countryCode;
 	}
 }

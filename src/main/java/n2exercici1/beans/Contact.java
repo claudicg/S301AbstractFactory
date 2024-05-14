@@ -1,11 +1,9 @@
 package n2exercici1.beans;
 
 import n2exercici1.abstracFactory.IContact;
-import n2exercici1.enums.CountryEnum;
-import n2exercici1.handlers.MainMenuHandler;
-import n2exercici1.utils.Constants;
 
-public class Contact implements IContact{
+
+public class Contact implements IContact	{
 
 	private int contactId;
 	private static int contactIdNext = 1;
@@ -80,12 +78,10 @@ public class Contact implements IContact{
 
 
 	@Override
-	public void printContactType(String country) {
+	public Contact createContact(String name, String lastName, String telephone, String roadType, String roadName,
+			String doorNumber, String floor, String door, String city, String postCode) {
 		
-		if(country.equalsIgnoreCase(CountryEnum.SPAIN.getName())) {
-			MainMenuHandler.printText(Constants.Menus.SPAIN_TYPE);
-		}else if(country.equalsIgnoreCase(CountryEnum.UK.getName())) {
-			MainMenuHandler.printText(Constants.Menus.UK_TYPE);
-		}
+		return null;
 	}
+
 }

@@ -44,12 +44,5 @@ public class SpainAddress extends Address{
 	public String toString() {
 		return "SpainAddress [postCode=" + postCode + ", country=" + country + "]";
 	}
-	
-	
-
-	
-	
-
-	
-	
+		
 }

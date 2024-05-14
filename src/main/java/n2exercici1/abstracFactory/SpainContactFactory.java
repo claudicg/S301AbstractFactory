@@ -6,10 +6,10 @@ import n2exercici1.beans.SpainAddress;
 import n2exercici1.beans.SpainTelephone;
 import n2exercici1.beans.Telephone;
 
-public class SpainContactFactory extends ContactAbstracFactory{
+public class SpainContactFactory implements IContact{
 
 	@Override
-	public IContact createContact(String name, 
+	public Contact createContact(String name, 
 								   String lastName, 
 								   String telephone,
 								   String roadType, 
@@ -22,7 +22,7 @@ public class SpainContactFactory extends ContactAbstracFactory{
 	
 		Telephone phone = new SpainTelephone(telephone);
 		Address ads = new SpainAddress(roadType, roadName, doorNumber, floor, door, city, postCode);
-		IContact contact = new Contact(name, lastName, phone, ads);
+		Contact contact = new Contact(name, lastName, phone, ads);
 		return contact;
 	}
 }

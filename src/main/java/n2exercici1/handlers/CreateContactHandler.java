@@ -31,7 +31,6 @@ public class CreateContactHandler {
 		printName(name, lastName);
 		Contact contact = (Contact) ContactManager.createContactByCountry(name, lastName , telephone, roadType, roadName,
 				doorNumber, floor, door, city, postCode, country);
-		contact.printContactType(country);
 		
 		logger.info("CreateContactHandler :: runCreateContact :: new contact created.");
 		

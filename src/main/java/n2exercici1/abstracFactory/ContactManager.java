@@ -12,13 +12,13 @@ public class ContactManager {
 			SpainContactFactory spainFactory = new SpainContactFactory();
 			IContact contact = spainFactory.createContact(name, lastName, telephone, roadType,
 					roadName, doorNumber, floor, door, city, postCode);
-			contact.printContactType(CountryEnum.SPAIN.getCountryCode());
+			
 			return contact;
 		}else if(country.equalsIgnoreCase(CountryEnum.UK.getName())) {
 			UKContactFactory ukFactory = new UKContactFactory();
 			IContact contact = ukFactory.createContact(name, lastName, telephone, roadType, roadName,
 					doorNumber, floor, door, city, postCode);
-			contact.printContactType(CountryEnum.UK.getCountryCode());
+			
 			return contact;
 		}
 		return null;
